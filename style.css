@@ -1,0 +1,55 @@
+/* FEEL FREE TO EDIT THE VARIABLE VALUES WITHOUT FEAR! 
+                DON'T CHANGE THE NAMES!             */
+:root
+{
+  --row-min-height: 100px;
+  --row-padding: 0px;
+  --row-background-color: rgb(37, 37, 37);
+  --row-border: none;
+  --row-border-bottom: 1px solid rgb(255, 255, 255);
+
+  --rb-padding: 5px;
+  --rb-background-color: #000;
+  --rb-border: 1px solid rgb(72, 253, 0);
+  --rb-shadow: 0px 0px 10px 10px rgba(72, 253, 0, 0.55) inset;
+}
+
+/*===========================================
+= EDITING BELOW THIS LINE CAN BREAK ROMAN!! =
+============================================*/
+
+/*============= BASE ============*/
+body{ box-sizing: border-box; min-height: 100vh; }
+*,*::before,*::after{ margin: 0; padding: 0; box-sizing: inherit; }
+/*============= ROWS ============*/
+.row
+{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: var(--row-padding);
+  border: var(--row-border);
+  border-bottom: var(--row-border-bottom);
+  background-color: var(--row-background-color);
+  min-height: var(--row-min-height);
+}
+.row--i{ height: clamp(var(--row-min-height), 25vh, 270px); }
+.row--ii{ height: clamp(var(--row-min-height), 50vh, 540px); }
+.row--iii{ height: clamp(var(--row-min-height), 75vh, 812px); }
+.row--iv{ height: clamp(var(--row-min-height), 100vh, 1080px); }
+/*=========== BLOCKS ===========*/
+.rb
+{
+  height: 100%;
+  width: 100%;
+  padding: var(--rb-padding);
+  border: var(--rb-border); 
+  box-shadow: var(--rb-shadow); 
+}
+.rb--i{ grid-column: span 1; }
+.rb--ii{ grid-column: span 2; }
+.rb--iii{ grid-column: span 3; }
+.rb--iv{ grid-column: span 4; }
+.rb--v{ grid-column: span 5; }
+.rb--vi{ grid-column: span 6; }
+.rb--vii{ grid-column: span 7; }
+.rb--viii{ grid-column: span 8; }
