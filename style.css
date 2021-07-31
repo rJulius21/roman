@@ -6,12 +6,12 @@
   --row-padding: 0px;
   --row-background-color: rgb(37, 37, 37);
   --row-border: none;
-  --row-border-bottom: 1px solid rgb(255, 255, 255);
+  --row-border-bottom: none;
 
   --rb-padding: 5px;
   --rb-background-color: #000;
-  --rb-border: 1px solid rgb(72, 253, 0);
-  --rb-shadow: 0px 0px 10px 10px rgba(72, 253, 0, 0.55) inset;
+  --rb-border: 1px solid rgb(205, 253, 255);
+  --rb-shadow: 0px 0px 10px 10px rgba(0, 223, 253, 0.55) inset;
 }
 
 /*===========================================
@@ -42,6 +42,7 @@ body{ box-sizing: border-box; min-height: 100vh; }
   height: 100%;
   width: 100%;
   padding: var(--rb-padding);
+  background-color: var(--rb-background-color);
   border: var(--rb-border); 
   box-shadow: var(--rb-shadow); 
 }
